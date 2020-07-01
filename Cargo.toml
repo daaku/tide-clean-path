@@ -1,0 +1,19 @@
+[package]
+name = "tide-clean-path"
+version = "1.0.0"
+authors = ["Naitik Shah <n@daaku.org>"]
+edition = "2018"
+description = "Middleware to clean request's URI, and redirect if necessary."
+readme = "readme.md"
+repository = "https://github.com/daaku/tide-clean-path"
+keywords = ["tide", "middleware"]
+categories = []
+license = "MIT"
+
+[dependencies]
+tide = "0.11"
+path-clean = "0.1"
+
+[dev-dependencies]
+async-std = { version = "1.6", features = ["attributes"] }
+http-types = "2.2"
